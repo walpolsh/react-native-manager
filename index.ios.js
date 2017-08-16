@@ -1,53 +1,17 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
+  AppRegistry
+
+  //AppRegistry is the JS entry point to running all React Native apps.
+  //App root components should register themselves with
+  //AppRegistry.registerComponent, then the native system can load the bundle
+  //for the app and then actually run the app when it's ready by invoking
+  //AppRegistry.runApplication.
+
 } from 'react-native';
+import App from './src/App';
 
-export default class manager extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
-  }
-}
+AppRegistry.registerComponent('manager', () => App);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('manager', () => manager);
+//App root components should register themselves with AppRegistry.registerComponent
+// then the native system can load the bundle for the app and then actually run
+// the app when it's ready by invoking AppRegistry.runApplication.
