@@ -53,4 +53,8 @@ const mapStateToProps = state => {
   };
 };
 
+//mapStateToProps will return an object derived from the state
+//it's keys will be passed to the target componentWillMount
+//Its just a helper function to have a simpler way to access your state properties
+
 export default connect(mapStateToProps, { emailChanged, passwordChanged })(LoginForm);
