@@ -4,7 +4,7 @@ import { createStore, applyMiddleware } from 'redux';
 import firebase from 'firebase';
 import ReduxThunk from 'redux-thunk'; //requires applyMiddleware from redux
 import reducers from './reducers';
-import LoginForm from './components/LoginForm';
+import RouterComponent from './Router';
 
 class App extends Component {
   componentWillMount() {
@@ -26,7 +26,7 @@ class App extends Component {
     //applyMiddleware(ReduxThunk) = store enhancer = adds functionality to the store
     return (
       <Provider store={store}>
-        <LoginForm />
+        <RouterComponent />
       </Provider>
     );
   }
