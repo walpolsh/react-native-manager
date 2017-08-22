@@ -10,10 +10,12 @@
 		"firebase": "^4.3.0",
 		"lodash": "^4.17.4",
 		"react": "16.0.0-alpha.12",
+		"react-addons-css-transition-group": "^15.6.0",
 		"react-native": "0.47.1",
 		"react-native-communications": "^2.2.1",
 		"react-native-router-flux": "^4.0.0-beta.18",
 		"react-redux": "^5.0.6",
+		"react-transition-group": "^2.2.0",
 		"redux": "^3.7.2",
 		"redux-thunk": "^2.2.0"
 	},
