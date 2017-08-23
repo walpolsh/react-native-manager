@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+import { Actions } from 'react-native-router-flux';
 import {
   EMAIL_CHANGED,
   PASSWORD_CHANGED,
@@ -40,11 +41,15 @@ const loginUserSuccess = (dispatch, user) => {
     type: LOGIN_USER_SUCCESS,
     payload: user,
   });
+  Actions.employeeList();
+  //actions object imported from react-native-router-flux
+  //employeeList is the key property of the employeeList scene
 };
 
 const loginUserFail = (dispatch) => {
   dispatch({ type: LOGIN_USER_FAIL });
 };
+
 
 //action creator is called, ReduxThunk sees the function and calls it with dispatch
 //dispatch allows us to automatically dispatch an action anywhere in our code

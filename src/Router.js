@@ -13,7 +13,7 @@ const RouterComponent = () => {
           title='Please Login'
         />
         <Scene
-          key='employeelist'
+          key='employeeList'
           component={EmployeeList}
           title='Employees'
         />
