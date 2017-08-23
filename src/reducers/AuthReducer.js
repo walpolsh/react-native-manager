@@ -4,7 +4,7 @@ import {
   LOGIN_USER_SUCCESS,
   LOGIN_USER_FAIL,
   LOGIN_USER,
-} from '../components/actions/types';
+} from '../actions/types';
 
 //^importing the action types
 
