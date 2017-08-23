@@ -41,7 +41,7 @@ const loginUserSuccess = (dispatch, user) => {
     type: LOGIN_USER_SUCCESS,
     payload: user,
   });
-  Actions.employeeList();
+  Actions.main();
   //actions object imported from react-native-router-flux
   //employeeList is the key property of the employeeList scene
 };
